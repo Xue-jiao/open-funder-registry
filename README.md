@@ -8,10 +8,25 @@ The list is available to download as an RDF file, and is freely available under 
 
 ## Latest Version
 
-The latest version of the registry is `v1.24`. Download the latest release [here](https://github.com/CrossRef/open-funder-registry/releases/latest).
+The latest version of the registry is `v1.25`. Download the latest release [here](https://github.com/CrossRef/open-funder-registry/releases/latest).
 
-Funder count: 19,776.
+Funder count: 20,423.
 
-19,446 active funders, 330 defunct or replaced.
+20,080 active funders, 343 defunct or replaced.
+
+There are two additions to the schema in this release:
+
+1. A new field for “region” has been added:
+
+<svf:region>Europe</svf:region>
+
+The values that can appear here are Africa, Americas, Asia, Europe and Oceana.
+
+2. Where an altLabel is an acronym it will be specified in the usageFlag
+<fref:usageFlag rdf:resource="http://data.crossref.org/fundingdata/vocabulary/acronym" />
+
+instead of 
+<fref:usageFlag rdf:resource="http://data.crossref.org/fundingdata/vocabulary/abbrevName" />
+
 
 A .csv file of the most recent version of the Registry can [also be downloaded](https://doi.crossref.org/funderNames?mode=list) Note that there is no version history at this time for the .csv format.
